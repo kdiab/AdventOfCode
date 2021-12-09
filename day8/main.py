@@ -114,13 +114,10 @@ def fetch(n):
         for k in code_dict:
             if Counter(o) == Counter(code_dict[k]):
                 total_output += str(k)
-
-    print(total_output)
-    print(code_dict)
     return total_output
 
 
 sum_total_output = 0
 for s in range(len(sub_input)):
     sum_total_output += int(fetch(s))
-print(sum_total_output)
+print(f"Sum of decoded codes: {sum_total_output}")
